@@ -3,8 +3,8 @@ from typing import Annotated
 from fastapi import Body, FastAPI, HTTPException
 
 from domain.domain import process_request
-from fixtures.data import FAKE_DATABASE
 from services import process_request_str
+from tiny_database import db
 
 app = FastAPI()
 
@@ -15,4 +15,5 @@ async def get_form(body_request: Annotated[str, Body()]):
         request_dict = process_request_str(body_request)
     except ValueError:
         raise HTTPException(status_code=400)
-    return process_request(request_dict, FAKE_DATABASE)
+    templates = db.all()
+    return process_request(request_dict, templates)
