@@ -1,6 +1,6 @@
 import pytest
 
-from domain import (
+from domain.domain import (
     FIELD_VALIDATION_FUNCTION_DICT,
     FieldType,
     get_field_type,

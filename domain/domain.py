@@ -1,7 +1,7 @@
 from enum import Enum
 from typing import Callable
 
-from aux_utils import is_date, is_email, is_phone
+from domain.domain_aux_utils import is_date, is_email, is_phone
 from fixtures.data import FAKE_DATABASE
 
 

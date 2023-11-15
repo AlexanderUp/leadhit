@@ -1,6 +1,6 @@
 import pytest
 
-from aux_utils import is_date, is_email, is_phone
+from domain.domain_aux_utils import is_date, is_email, is_phone
 
 
 @pytest.mark.parametrize('date', ['14.11.2023', '2023-11-14'])
