@@ -2,7 +2,7 @@
 
 ## How to run application
 
-## Python 3.12 was used
+## Python 3.12 and TinyDB were used
 
 - Clone repo
 
